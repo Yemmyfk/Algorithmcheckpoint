@@ -1,0 +1,19 @@
+//Algorithm Checkpoint
+
+sentence = input("You are so kind to me.: ")
+
+length_counter = 0
+word_counter = 1
+vowel_counter = 0
+
+for char in sentence:
+    length_counter = length_counter + 1
+    if char == ' ':
+        word_counter = word_counter + 1
+    char_lower = char.lower()
+    if char_lower in ['a', 'e', 'i', 'o', 'u']:
+        vowel_counter = vowel_counter + 1 
+
+print("Sentence length:", length_counter)
+print("Word count:", word_counter)
+print("Vowel count:", vowel_counter)
